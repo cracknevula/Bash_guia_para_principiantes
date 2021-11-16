@@ -1,0 +1,101 @@
+Tabla de contenidos
+
+Introduccion
+
+1.- ¿Por que esta guia?
+2.- ¿Quien deberia de leer este libro?
+3.- Nuevas versiones, traducciones y disponibilidad
+4.- Historial de reviciones
+5.- Contribuciones
+6.- Retroalimentacion
+7.- Informacion de los derechos de autor
+8.- ¿Que es lo que necesitas?
+9.- Convenciones usadas en este libro
+10.- Organizacion de este documento
+
+Capitulo 1
+Bash y los scripts en Bash
+
+1.1 Programas comunes en shell
+1.1.1 Funciones de shell generales
+1.1.2 Tipo de Shell
+1.2 Bentajas del Bourne Again Shell
+1.2.1 Bash es el shell del proyecto GNU
+1.2.2 Caracteristicas que solo encontraras en bash
+1.3 Ejecutando programas
+1.3.1 En general
+1.3.2 Comandos escritos dentro del shell
+1.3.3 Ejecutando programas desde un script
+1.4 Bloques de construccion
+1.4.1 Construllendo bloques en shell [mmmm esta es la mejor traduccion???]
+1.5 Desarrollando buenos scripts
+1.5.1 Propiedades de los buenos scripts
+1.5.2 Estructura
+1.5.3 Terminologia
+1.5.4 Una palabra en orden y logica
+1.5.5 Un ejemplo de script Bash: misistema.sh
+1.5.6 Ejemplo de scrit init
+1.6 Sumarizando [Sumario]
+1.7 Ejercicios
+
+Capitulo 2
+Escribiendo y depurando scripts
+
+2.1 Creando y corriendo un script
+2.1.1 Escribiendo y nombrando
+2.1.2 script1.sh
+2.1.3 Ejecutando un script
+2.2 Scripts basicos
+2.2.1 ¿Que shell correra el script?
+2.2.2 Agregando comentarios
+2.3 Depurando scripts en Bash
+2.3.1 Depurando un script completo
+2.3.2 Depurando partes del script
+2.4 Sumario
+2.5 Ejercicios
+
+Capitulo 3
+El entorno Bash
+
+3.1 Archivos de inicializacion del shell
+3.1.1 Archivos de configuracion de todo el sistema
+3.1.2 Archivos de configuracion de usuarios individuales
+3.1.3 Cambiando archivos de configuracion del shell
+3.2 Variables
+3.2.1 Tipos de variables
+3.2.2 Creando variables
+3.2.3 Exportando variables
+3.2.4 Reservando variables
+3.2.5 Parametros especiales
+3.2.6 Reciclado de scripts con variables
+3.3 Entrecommilando caracteres
+3.3.1 ¿Por que?
+3.3.2 Caracteres de escape
+3.3.3 
+3.3.4
+3.3.5
+3.3.6
+3.4
+3.4.1
+3.4.2
+3.4.3
+3.4.4
+3.4.5
+3.4.6
+3.4.7
+3.4.8
+3.4.9
+3.5
+3.5.1
+3.5.2
+3.6
+3.6.1
+3.6.2
+3.7
+3.8
+
+
+
+
+
+
