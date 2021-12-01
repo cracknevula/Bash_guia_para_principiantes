@@ -71,31 +71,504 @@ El entorno Bash
 3.3 Entrecommilando caracteres
 3.3.1 ¿Por que?
 3.3.2 Caracteres de escape
-3.3.3 
-3.3.4
-3.3.5
-3.3.6
-3.4
-3.4.1
-3.4.2
-3.4.3
-3.4.4
-3.4.5
-3.4.6
-3.4.7
-3.4.8
-3.4.9
-3.5
-3.5.1
-3.5.2
-3.6
-3.6.1
-3.6.2
-3.7
-3.8
+3.3.3 Comillas simples
+3.3.4 Comillas dobles
+3.3.5 Comillado ANSI-C
+3.3.6 Locales
+3.4 Expansion Shell
+3.4.1 General
+3.4.2 Expancion de llaves
+3.4.3 Expancion de tildes
+3.4.4 Parametros de shell y expancion de variables
+3.4.5 Sustitucion de comandos
+3.4.6 Expancion aritmetica
+3.4.7 Sustitucion de procesos
+3.4.8 Divisor de palabras
+3.4.9 Expancion de nombres de archivo
+3.5 Alias
+3.5.1 Que son los alias?
+3.5.2 Creando y removiendo alias
+3.6 Mas opciones de Bash
+3.6.1 Mostrar opciones
+3.6.2 Cambiando opciones
+3.7 Sumario
+3.8 exercicios
+
+Capitulo 4
+Expreciones regulares
+
+4.1 Expreciones regulares
+4.1.1 ¿Que son las expreciones regulares?
+4.1.2 Metacaracteres de las expresiones regulares
+4.1.3 Expreciones regulares, basicas & extendidas
+4.2 Ejemplos usando grep
+4.2.1 ¿Que es grep?
+4.2.2 Grep y las expresiones regulares
+4.3 Busqueda de patrones usando las caracteristicas de Bash
+4.3.1 Rangos de caracteres
+4.3.2 Clases de caracteres
+4.4 Sumario
+4.5 Exercicios
+
+Capitulo 5
+El editor de flujo GNU sed
+
+5.1 Introduccion
+5.1.1 ¿Que es sed?
+5.1.2 comandos sed
+5.2 Editor interactivo
+5.2.1 Imprimiendo lineas que contienen un patron
+5.2.2 Eliminando lineas de la entrada que contienen un patron
+5.2.3 Rangos de lineas
+5.2.4 Encontrando y reemplazando con sed
+5.3 Edicion no interactiva
+5.3.1 Leyendo comandos sed desde un archivo
+5.3.2 Escribiendo archivos de salida
+5.4 Sumario
+5.5 Ejercicios
+
+Capitulo 6
+El lenguaje de programacion GNU awk
+
+6.1 Iniciando con gawk
+6.1.1 ¿Que es gawk?
+6.1.2 Comandos gawk
+6.2 El programa "print"
+6.2.1 Imprimiendo campos seleccionados
+6.2.2 Formateando campos
+6.2.3 El comando print y las expresiones regulares
+6.2.4 Patrones especiales
+6.2.5 Scripts gawk
+6.3 Variables gawk
+6.3.1 El separador del campo de entrada
+6.3.2 Los separadores de salida
+6.3.3 El numero de registros
+6.3.4 Variables definidas por el usuario
+6.3.5 Mas ejemplos
+6.3.6 El programa "printf"
+6.4 Sumario
+6.5 Ejercicios
+
+Capitulo 7
+Declaraciones condicionales
+
+7.1 Introduccion a "if"
+7.1.1 General
+7.1.2 Declaraciones simples de "if"
+7.2 Uso avanzado de "if"
+7.2.1 Construcciones if/then/else
+7.2.2 Construcciones if/then/elif/else
+7.2.3 Declaraciones "if" anidados
+7.2.4 Operaciones booleanas
+7.2.5 Uso de las declaraciones "exit" y "if"
+7.3 Uso de las declaraciones "case"
+7.3.1 Condiciones simplificadas
+7.3.2 Ejemplos de scripts de inicio en bash "initscript" y su version actualizada "systemd"
+7.4 Sumario
+7.5 Ejercicios
+
+Capitulo 8
+Escribiendo scripts interactivos
+
+8.1 Mostrando mensajes de usuario
+8.1.1 Interactivo ¿o no?
+8.1.2 Usando el comando embebido "echo"
+8.2 Cachando la entrada de usuario
+8.2.1 Usando el comando embebido "read"
+8.2.2 Esperando por la entrada del usuario
+8.2.3 Redireccion y descriptores de archivo
+8.2.4 Archivos de entrada y de salida
+8.3 Sumario
+8.4 Ejercicios
+
+Capitulo 9
+Tareas repetitivas
+
+9.1 El ciclo "for"
+9.1.1 ¿Como es que trabaja?
+9.1.2 Ejemplos
+9.2 El ciclo "while"
+9.2.1 ¿Que es?
+9.2.2 Ejemplos
+9.3 El ciclo "until"
+9.3.1 ¿Que es?
+9.3.2 Ejemplos
+9.4 Redirecciones de entrada y salida; y ciclos
+9.4.1 Redireccion de entrada
+9.4.2 Redireccion de salida
+9.5 "break" y "continue"
+9.5.1 El comando embebido "break" 
+9.5.2 El comando embebido "continue" 
+9.5.3 Ejemplos
+9.6 Haciendo menus con el comando embebido "select"
+9.6.1 General
+9.6.2 Submenus
+9.7 El comando embebido "shift"
+9.7.1 ¿Que es lo que hace?
+9.7.2 Ejemplos
+9.8 Sumario
+9.9 Ejercicios
+
+Capitulo 10
+Mas de variables
+
+10.1 Tipos de variables
+10.1.1 Asignacion general de variables
+10.1.2 Usando la declaracion embebida
+10.1.3 Constantes
+10.2 Variables array
+10.2.1 Creando arrays
+10.2.2 Diferenciando las variables en un array
+10.2.3 Eliminando variables array
+10.2.4 Ejemplos de arrays
+10.3 Operaciones en variables
+10.3.1 Aritmetica en variables
+10.3.2 Longitud de una variable
+10.3.3 Transformacion de variables
+10.4 Sumario
+10.5 Ejercicios
+
+Capitulo 11
+Funciones
+
+11.1 Introduccion
+11.1.1 ¿Que son las funciones?
+11.1.2 sintaxis de una funcion 
+11.1.3 Parametros posicionales en una funcion
+11.1.4 Mostrando funciones
+11.2  Ejemplos de funciones en scripts
+11.2.1 Recliclando
+11.2.2 Configurando en el "path"
+11.2.3 Backups remotas/Copias de respaldo remotas
+11.3 Sumario
+11.4 Ejercicios
+
+Capitulo 12
+Capturando señales
+
+12.1 Señales
+12.1.1 Introduccion
+12.1.2 Uso de señales con "kill"
+12.2 Trampas
+12.2.1 General
+12.2.2 Como hacer trampas en bash
+12.2.3 Mas ejemplos
+12.3 Sumario
+12.4 Ejercicios
+
+Apendice
+
+A.1 Caracteristicas comunes
+A.2 Ejercicios
 
 
 
 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Introduccion
+
+1.- ¿Por que esta guia?
+La principal razon para escribir este documento es que un monton de lectores encuentran los HOWTO muy cortos e incompletos, Mientras que "La guia script de BASH" es demaciado para un trabajo de referencia. No existe nada entre esos dos extremos. Escribi esta guia con la primicia de que no existen cursos basicos gratis disponibles, tal y como deberia de ser.
+
+Esta es un guia practica lo cual mientras no siempre sea demaciado seria, trata de dar ejemplos de la vida real en lugar de teoria. Lo escribi porque no es que me emocione particularmente el tirar y sobresimplificar ejemplos de gente que sabe de lo que esta hablando, mostrando algunas caracteristicas realmente geniales de Bash pero que practicamente nunca usaras en circunstancias practicas. Puedes leer esas cosas despues de leer este libro, el cual contiene ejercicios y ejemplos que te ayudaran a sobrevivir en el mundo real.
+
+Desde mi experiencia como usuaria de GNU-Linux/Unix administradora de sistemas y entrenadora, he conocido gente que han pasado años de diaria interaccion con sus sistemas, sin tener el minimo conocimiento de automatizacion de tareas. Aquellos piensan que UNIX no es amigable al usuario, he incluso peor Tienen la impresion de que es lento y fuera de moda. Este problema no es otro que el que puede ser remediado por esta guia.
+
+2.- ¿Quien deberia de leer este libro?
+Cualquiera que trabaje en UNIX o algun sistema parecido a UNIX aquellos que quieren ahcer su vida mas facil para si mismos, Usuarios avanzados y tipos de administradores de sustemas, pueden ser veneficiados al leer este libro. Lectores que ya tienen una comprension del funcionamiento de sus sistemas usando la linea de comandos aprenderan los pros y contras del crear shell scripts que pueden facilmente hacer las tareas del dia. La administracion de sistemas libera un gran trato del shell script; las tareas comunes son a menudo automatizadas usando scripts shell. Este documento esta repleto de ejemplos que te alentaran a escribir los tuyos propios y que te inspiraran a mejorar scrpts existentes.
+
+Prerrequisitos en este curso:
+
+- Deberias ser un usuario de UNIX o linux avanzado, familiarizado con comandos basicos, paguinas del manual y documentacion.
+- Ser habil para usar un editor de texto
+- Entendimiento del systema de booteo y el proceso de apagado, init y scripts init
+- Crear usuarios y grupos, colocar contraseñas.
+- Permisos y modos especiales
+- Entender convenciones de los nombres de dispositivos, particionado, montaje y desmontaje de sistemas de archivos.
+- Agregar y remover software en tu sistema
+
+Vee "introduccion a linux" (en tu copia espejo de TLDP) si tu no tienes maestria en uno o mas de estos temas. Informacion adicional puede ser encontrada en la documentacion de tu sistema (man  y paginas info), o en el proyecto de documentacion linux.
+
+3.- Nuevas versiones, traducciones y disponibilidad
+
+
+
+
+4.- Historial de reviciones
+5.- Contribuciones
+6.- Retroalimentacion
+7.- Informacion de los derechos de autor
+8.- ¿Que es lo que necesitas?
+9.- Convenciones usadas en este libro
+10.- Organizacion de este documento
+Esta guia discute conceptos utiles en la vida diaria de un usuario de Bash serio. Mientras un conocimiento basico del uso del shell es requerido, nosotros iniciamos con una discucion de los componentes basicos del shell y practicas en los primeros 3 capitulos.
+
+Del capitulo 4 al 6 son discuciones de herramientas basicas que son comunmente usados en scripts shells.
+
+Del capitulo 8 al 20 discute los constructos mas comunes en los scripts shell.
+
+Todos los capitulos bienen con ejercicios que van a probar tu preparacion para el proximo capitulo.
+
+Capitulo 1: Basicos de Bash: porque Bash es bueno, construccion de blocks, primeras guias en el desarrollo de buenos scripts.
+Capitulo 2: Basicos de script: escribiendo y debugeando.
+Capitulo 3: El entorno de Bash: inicializacion de archivos, variables, entrecomillado de caracteres, expancion de shell, orden, alias, opciones.
+Capitulo 4: Expreciones regulaes: una introduccion.
+Capitulo 5: Sed: una introduccion al editor de linea sed.
+Capitulo 6: AWK: Una introduccion al lenguaje de programacion AWK.
+Capitulo 7: Declaraciones condicionales: constructos usados en Bash para testear condiciones.
+Capitulo 8: Scripts interactivos: haciendo scripts agradables al usuario, capturando la entrada del usuario.
+Capitulo 9: Ejecutando comandos repetidamente: constructos usados en Bash para automatizar
+Capitulo 10: Variables avanzadas: especificando tipos de variables, introduccion a los arrays de variables.
+Capitulo 11: Funciones: una introduccion.
+Capitulo 12: Capturando señales: Introduccion a las señales de los procesos, atrapando señales enviadas por el usuario.
+
+
+
+
+Capitulo 1
+Bash y los scripts en Bash
+
+1.1 Programas comunes en shell
+1.1.1 Funciones de shell generales
+1.1.2 Tipo de Shell
+1.2 Bentajas del Bourne Again Shell
+1.2.1 Bash es el shell del proyecto GNU
+1.2.2 Caracteristicas que solo encontraras en bash
+1.3 Ejecutando programas
+1.3.1 En general
+1.3.2 Comandos escritos dentro del shell
+1.3.3 Ejecutando programas desde un script
+1.4 Bloques de construccion
+1.4.1 Construllendo bloques en shell [mmmm esta es la mejor traduccion???]
+1.5 Desarrollando buenos scripts
+1.5.1 Propiedades de los buenos scripts
+1.5.2 Estructura
+1.5.3 Terminologia
+1.5.4 Una palabra en orden y logica
+1.5.5 Un ejemplo de script Bash: misistema.sh
+1.5.6 Ejemplo de scrit init
+1.6 Sumarizando [Sumario]
+1.7 Ejercicios
+
+Capitulo 2
+Escribiendo y depurando scripts
+
+2.1 Creando y corriendo un script
+2.1.1 Escribiendo y nombrando
+2.1.2 script1.sh
+2.1.3 Ejecutando un script
+2.2 Scripts basicos
+2.2.1 ¿Que shell correra el script?
+2.2.2 Agregando comentarios
+2.3 Depurando scripts en Bash
+2.3.1 Depurando un script completo
+2.3.2 Depurando partes del script
+2.4 Sumario
+2.5 Ejercicios
+
+Capitulo 3
+El entorno Bash
+
+3.1 Archivos de inicializacion del shell
+3.1.1 Archivos de configuracion de todo el sistema
+3.1.2 Archivos de configuracion de usuarios individuales
+3.1.3 Cambiando archivos de configuracion del shell
+3.2 Variables
+3.2.1 Tipos de variables
+3.2.2 Creando variables
+3.2.3 Exportando variables
+3.2.4 Reservando variables
+3.2.5 Parametros especiales
+3.2.6 Reciclado de scripts con variables
+3.3 Entrecommilando caracteres
+3.3.1 ¿Por que?
+3.3.2 Caracteres de escape
+3.3.3 Comillas simples
+3.3.4 Comillas dobles
+3.3.5 Comillado ANSI-C
+3.3.6 Locales
+3.4 Expansion Shell
+3.4.1 General
+3.4.2 Expancion de llaves
+3.4.3 Expancion de tildes
+3.4.4 Parametros de shell y expancion de variables
+3.4.5 Sustitucion de comandos
+3.4.6 Expancion aritmetica
+3.4.7 Sustitucion de procesos
+3.4.8 Divisor de palabras
+3.4.9 Expancion de nombres de archivo
+3.5 Alias
+3.5.1 Que son los alias?
+3.5.2 Creando y removiendo alias
+3.6 Mas opciones de Bash
+3.6.1 Mostrar opciones
+3.6.2 Cambiando opciones
+3.7 Sumario
+3.8 exercicios
+
+Capitulo 4
+Expreciones regulares
+
+4.1 Expreciones regulares
+4.1.1 ¿Que son las expreciones regulares?
+4.1.2 Metacaracteres de las expresiones regulares
+4.1.3 Expreciones regulares, basicas & extendidas
+4.2 Ejemplos usando grep
+4.2.1 ¿Que es grep?
+4.2.2 Grep y las expresiones regulares
+4.3 Busqueda de patrones usando las caracteristicas de Bash
+4.3.1 Rangos de caracteres
+4.3.2 Clases de caracteres
+4.4 Sumario
+4.5 Exercicios
+
+Capitulo 5
+El editor de flujo GNU sed
+
+5.1 Introduccion
+5.1.1 ¿Que es sed?
+5.1.2 comandos sed
+5.2 Editor interactivo
+5.2.1 Imprimiendo lineas que contienen un patron
+5.2.2 Eliminando lineas de la entrada que contienen un patron
+5.2.3 Rangos de lineas
+5.2.4 Encontrando y reemplazando con sed
+5.3 Edicion no interactiva
+5.3.1 Leyendo comandos sed desde un archivo
+5.3.2 Escribiendo archivos de salida
+5.4 Sumario
+5.5 Ejercicios
+
+Capitulo 6
+El lenguaje de programacion GNU awk
+
+6.1 Iniciando con gawk
+6.1.1 ¿Que es gawk?
+6.1.2 Comandos gawk
+6.2 El programa "print"
+6.2.1 Imprimiendo campos seleccionados
+6.2.2 Formateando campos
+6.2.3 El comando print y las expresiones regulares
+6.2.4 Patrones especiales
+6.2.5 Scripts gawk
+6.3 Variables gawk
+6.3.1 El separador del campo de entrada
+6.3.2 Los separadores de salida
+6.3.3 El numero de registros
+6.3.4 Variables definidas por el usuario
+6.3.5 Mas ejemplos
+6.3.6 El programa "printf"
+6.4 Sumario
+6.5 Ejercicios
+
+Capitulo 7
+Declaraciones condicionales
+
+7.1 Introduccion a "if"
+7.1.1 General
+7.1.2 Declaraciones simples de "if"
+7.2 Uso avanzado de "if"
+7.2.1 Construcciones if/then/else
+7.2.2 Construcciones if/then/elif/else
+7.2.3 Declaraciones "if" anidados
+7.2.4 Operaciones booleanas
+7.2.5 Uso de las declaraciones "exit" y "if"
+7.3 Uso de las declaraciones "case"
+7.3.1 Condiciones simplificadas
+7.3.2 Ejemplos de scripts de inicio en bash "initscript" y su version actualizada "systemd"
+7.4 Sumario
+7.5 Ejercicios
+
+Capitulo 8
+Escribiendo scripts interactivos
+
+8.1 Mostrando mensajes de usuario
+8.1.1 Interactivo ¿o no?
+8.1.2 Usando el comando embebido "echo"
+8.2 Cachando la entrada de usuario
+8.2.1 Usando el comando embebido "read"
+8.2.2 Esperando por la entrada del usuario
+8.2.3 Redireccion y descriptores de archivo
+8.2.4 Archivos de entrada y de salida
+8.3 Sumario
+8.4 Ejercicios
+
+Capitulo 9
+Tareas repetitivas
+
+9.1 El ciclo "for"
+9.1.1 ¿Como es que trabaja?
+9.1.2 Ejemplos
+9.2 El ciclo "while"
+9.2.1 ¿Que es?
+9.2.2 Ejemplos
+9.3 El ciclo "until"
+9.3.1 ¿Que es?
+9.3.2 Ejemplos
+9.4 Redirecciones de entrada y salida; y ciclos
+9.4.1 Redireccion de entrada
+9.4.2 Redireccion de salida
+9.5 "break" y "continue"
+9.5.1 El comando embebido "break" 
+9.5.2 El comando embebido "continue" 
+9.5.3 Ejemplos
+9.6 Haciendo menus con el comando embebido "select"
+9.6.1 General
+9.6.2 Submenus
+9.7 El comando embebido "shift"
+9.7.1 ¿Que es lo que hace?
+9.7.2 Ejemplos
+9.8 Sumario
+9.9 Ejercicios
+
+Capitulo 10
+Mas de variables
+
+10.1 Tipos de variables
+10.1.1 Asignacion general de variables
+10.1.2 Usando la declaracion embebida
+10.1.3 Constantes
+10.2 Variables array
+10.2.1 Creando arrays
+10.2.2 Diferenciando las variables en un array
+10.2.3 Eliminando variables array
+10.2.4 Ejemplos de arrays
+10.3 Operaciones en variables
+10.3.1 Aritmetica en variables
+10.3.2 Longitud de una variable
+10.3.3 Transformacion de variables
+10.4 Sumario
+10.5 Ejercicios
+
+Capitulo 11
+Funciones
+
+11.1 Introduccion
+11.1.1 ¿Que son las funciones?
+11.1.2 sintaxis de una funcion 
+11.1.3 Parametros posicionales en una funcion
+11.1.4 Mostrando funciones
+11.2  Ejemplos de funciones en scripts
+11.2.1 Recliclando
+11.2.2 Configurando en el "path"
+11.2.3 Backups remotas/Copias de respaldo remotas
+11.3 Sumario
+11.4 Ejercicios
+
+Capitulo 12
+Capturando señales
+
+12.1 Señales
+12.1.1 Introduccion
+12.1.2 Uso de señales con "kill"
+12.2 Trampas
+12.2.1 General
+12.2.2 Como hacer trampas en bash
+12.2.3 Mas ejemplos
+12.3 Sumario
+12.4 Ejercicios
 
 
