@@ -294,9 +294,6 @@ Vee "introduccion a linux" (en tu copia espejo de TLDP) si tu no tienes maestria
 
 3.- Nuevas versiones, traducciones y disponibilidad
 
-
-
-
 4.- Historial de reviciones
 5.- Contribuciones
 6.- Retroalimentacion
@@ -325,15 +322,22 @@ Capitulo 10: Variables avanzadas: especificando tipos de variables, introduccion
 Capitulo 11: Funciones: una introduccion.
 Capitulo 12: Capturando señales: Introduccion a las señales de los procesos, atrapando señales enviadas por el usuario.
 
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
 Capitulo 1
 Bash y los scripts en Bash
 
 1.1 Programas comunes en shell
 1.1.1 Funciones de shell generales
+El programa shell interpreta de comandos de usuario de UNIX, los cuales cualquiera pueden ser ingresados directamente por el usuario, o tambien ser leidos desde un archivo llamado script shell o programa shell. Los programas shell son interpretados, no compilados. Los shells leer comandos desde el script linea por linea buscando los comandos en el sistema (veer la seccion 1.2), mientras un compilador convierte un programa en una forma leible por la maquina , un archivo ejecutable - el cual luego puede seer usado por un script shell.
+
+Aparte de pasar comandos al kernel la tarea principal del shell es proveer un entorno de usuario, el cual puede ser configurado individualmente usando archivos de configuracion del shell como recurso.
+
 1.1.2 Tipo de Shell
+Justo como la gente conoce diferentes lenguajes y dialectos , tu sistema UNIX generalmente va a ofreser una variedad de tipos de shell:
+
+- sh o Bourne shell: el shell original todavia usado en sistemas UNIX y sistemas tipo/relacionados UNIX.
+Este es el shell basico, un pequeño programa con unas cuantas caracteristicas. Mientras este no es el shell standar , sigue estando disponible en cada sistema linux por compatibilidad con los programas en UNIX.
+- bash o Bourne Again Shell: Es el shell standar del proyecto GNU, intuitivo y flexible. Probablemente es el mas aconsejable para usuarios novatos mientras empiezan al mismo tiempo es una poderosa herramienta para el susuario avanzado o profesional.En Linux, Bash es el estandar para el usuario comun. Este shell tambien es conocido como "superset" del Bourne Shell, un set de agregados y plug-ins. Esto significa que el Bourne Again shell es compatible con Bourne shell: comandos que trababajan en sh, tambien funcionanran en bash. Sin embargo, lo contrario no siempre es posible. Todos los ejemplos y los ejercicios de este libro usan bash.
+
 1.2 Bentajas del Bourne Again Shell
 1.2.1 Bash es el shell del proyecto GNU
 1.2.2 Caracteristicas que solo encontraras en bash
