@@ -337,6 +337,37 @@ Justo como la gente conoce diferentes lenguajes y dialectos , tu sistema UNIX ge
 - sh o Bourne shell: el shell original todavia usado en sistemas UNIX y sistemas tipo/relacionados UNIX.
 Este es el shell basico, un pequeño programa con unas cuantas caracteristicas. Mientras este no es el shell standar , sigue estando disponible en cada sistema linux por compatibilidad con los programas en UNIX.
 - bash o Bourne Again Shell: Es el shell standar del proyecto GNU, intuitivo y flexible. Probablemente es el mas aconsejable para usuarios novatos mientras empiezan al mismo tiempo es una poderosa herramienta para el susuario avanzado o profesional.En Linux, Bash es el estandar para el usuario comun. Este shell tambien es conocido como "superset" del Bourne Shell, un set de agregados y plug-ins. Esto significa que el Bourne Again shell es compatible con Bourne shell: comandos que trababajan en sh, tambien funcionanran en bash. Sin embargo, lo contrario no siempre es posible. Todos los ejemplos y los ejercicios de este libro usan bash.
+- csh o C shell: la sintaxis de este shell se asemeja al lenguaje de programacion C. Algunas veces pedido por programadores.
+- tcsh o TENEX C shell: es un superset del shell C comun, mejorando la sabilidad del usuario y velocidad. Este es el porque tambien es llamado el Turbo shell C.
+- ksh o el shell Korn: Algunas veces apreciado por la gente que tiene una formacion en UNIX. Es un superset de Bourne shell; Una pesadilla para usuarios novatos si tiene una configuracion estandar.
+
+El archivo /etc/shells te da una vision en general de los shells en un sistema Linux:
+
+$ cat /etc/shells
+# /etc/shells: valid login shells
+/bin/sh
+/bin/dash
+/bin/bash
+/bin/rbash
+/usr/bin/screen
+/usr/bin/tmux
+/usr/bin/pwsh
+/opt/microsoft/powershell/7/pwsh
+/bin/zsh
+/usr/bin/zsh
+/usr/bin/fizsh
+
+
+El shell por defecto esta configurado en el archivo /etc/passwd, como esta linea para el usuario jdonloader:
+
+jdownloader:x:1002:1002::/home/jdownloader:/bin/bash
+
+Para cambiar de un shell a otro, solo introduce el nombre del nuevo shell en la terminal activa. El sistema va a encontrar el directorio donde se encuentra por el nombre usando las opciones del PATH y ya que el shell es un archivo ejecutable (programa), el shell actual lo activa y es ejecutado. Normalmente un nuevo promp es mostrado, porque cada shell tiene una apariencia tipica:
+
+jdownloader@melchor:~$ tcsh
+melchor:~> 
+
+
 
 1.2 Bentajas del Bourne Again Shell
 1.2.1 Bash es el shell del proyecto GNU
