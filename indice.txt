@@ -22,6 +22,26 @@ Bash y los scripts en Bash
 1.2 Bentajas del Bourne Again Shell
 1.2.1 Bash es el shell del proyecto GNU
 1.2.2 Caracteristicas que solo encontraras en bash
+1.2.2.1
+1.2.2.2
+1.2.2.2.1
+1.2.2.2.2
+1.2.2.2.3
+1.2.2.2.4
+1.2.2.2.5
+1.2.2.2.6
+1.2.2.2.7
+1.2.2.3
+1.2.2.3.1
+1.2.2.3.2
+1.2.2.3.3
+1.2.2.4
+1.2.2.5
+1.2.2.6
+1.2.2.7
+1.2.2.8
+1.2.2.9
+1.2.2.10
 1.3 Ejecutando programas
 1.3.1 En general
 1.3.2 Comandos escritos dentro del shell
@@ -367,11 +387,18 @@ Para cambiar de un shell a otro, solo introduce el nombre del nuevo shell en la 
 jdownloader@melchor:~$ tcsh
 melchor:~> 
 
-
-
 1.2 Bentajas del Bourne Again Shell
+
 1.2.1 Bash es el shell del proyecto GNU
+El proyecto GNU (GNU's Not UNIX) provee herramientas administrativas para sistemas tipo UNIX las cuales son software libre y cumplen con los estandares de UNIX.
+
+Bash es un shell compatible con sh que incorpora caracteristicas utiles de Korn Shell (ksh) y C shell (csh). Esta destinado a ajustarse a los shell y herramientas estandares IEEE POSIX P1003.2/ISO 9945.2. Ofrese mejores funcionales sobre sh para los dos usos la interfaz interactiva y la programable; Estos incluyen edicion de linea de comandos, tamaño de historial ilimitado, control de trabajos, funciones del shell y alias, indice de arrays de tamaño ilimitado, y aritmetica de enteros en cualquier base desde la 2 a la 64. Bash puede correr la mayoria de los scripts sh sin modificar nada.
+
+Como otros proyectos de GNU, la iniciativa Bash fue iniciadapara preservar, protejer y promover la libertad de estudiar, copiar, modificar, y redistribuir el software. Es generalmente conocido que esas condiciones estimulan la creatividad. Este tambien es el caso con el programa bash, el cual tiene un monton de caracteristicas que las otras shells han podido ofreser.
+
 1.2.2 Caracteristicas que solo encontraras en bash
+1.2.2.1
+1.2.2.1
 1.3 Ejecutando programas
 1.3.1 En general
 1.3.2 Comandos escritos dentro del shell
