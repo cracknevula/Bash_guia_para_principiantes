@@ -22,32 +22,40 @@ Bash y los scripts en Bash
 1.2 Bentajas del Bourne Again Shell
 1.2.1 Bash es el shell del proyecto GNU
 1.2.2 Caracteristicas que solo encontraras en bash
-1.2.2.1
-1.2.2.2
-1.2.2.2.1
-1.2.2.2.2
-1.2.2.2.3
-1.2.2.2.4
-1.2.2.2.5
-1.2.2.2.6
-1.2.2.2.7
-1.2.2.3
-1.2.2.3.1
-1.2.2.3.2
-1.2.2.3.3
-1.2.2.4
-1.2.2.5
-1.2.2.6
-1.2.2.7
-1.2.2.8
-1.2.2.9
-1.2.2.10
+1.2.2.1 Invocacion
+1.2.2.2 Archivos de inicio de Bash
+1.2.2.2.1 Invocar un shell de logeo interactivo
+1.2.2.2.2 Invocar como un shell interactivo sin logeo
+1.2.2.2.3 Invocado de forma no interactiva
+1.2.2.2.4 Invocar con el comando sh
+1.2.2.2.5 Modo POSIX
+1.2.2.2.6 Invocado remotamente
+1.2.2.2.7 Invocar cuando UID es diferente de EUID
+1.2.2.3 Shells interactivos
+1.2.2.3.1 ¿Que es un shell interactivo?
+1.2.2.3.2 ¿Es esto un shell interactivo?
+1.2.2.3.3 Comportaminto de un shell interactivo
+1.2.2.4 Condicionales
+1.2.2.5 Aritmetica en el shell
+1.2.2.6 Alias
+1.2.2.7 Arrays (cadenas)
+1.2.2.8 Pila del directorio
+1.2.2.9 El prompt
+1.2.2.10 El sehll restringido
 1.3 Ejecutando programas
 1.3.1 En general
 1.3.2 Comandos escritos dentro del shell
 1.3.3 Ejecutando programas desde un script
 1.4 Bloques de construccion
 1.4.1 Construllendo bloques en shell [mmmm esta es la mejor traduccion???]
+1.4.1.1 Sintaxis del shell
+1.4.1.2 Comandos del shell
+1.4.1.3 Funciones del shell
+1.4.1.4 Parametros del shell
+1.4.1.5 Expanciones del shell
+1.4.1.6 Redirecciones
+1.4.1.7 Ejecutando comandos
+1.4.1.8 Scripts shell
 1.5 Desarrollando buenos scripts
 1.5.1 Propiedades de los buenos scripts
 1.5.2 Estructura
@@ -55,7 +63,7 @@ Bash y los scripts en Bash
 1.5.4 Una palabra en orden y logica
 1.5.5 Un ejemplo de script Bash: misistema.sh
 1.5.6 Ejemplo de scrit init
-1.6 Sumarizando [Sumario]
+1.6 Sumario
 1.7 Ejercicios
 
 Capitulo 2
@@ -70,7 +78,7 @@ Escribiendo y depurando scripts
 2.2.2 Agregando comentarios
 2.3 Depurando scripts en Bash
 2.3.1 Depurando un script completo
-2.3.2 Depurando partes del script
+2.3.2 Depurando parte(s) del script
 2.4 Sumario
 2.5 Ejercicios
 
@@ -79,16 +87,28 @@ El entorno Bash
 
 3.1 Archivos de inicializacion del shell
 3.1.1 Archivos de configuracion de todo el sistema
+3.1.1.1 /etc/profile
+3.1.1.2 /etc/bashrc
 3.1.2 Archivos de configuracion de usuarios individuales
+3.1.2.1 ~/.bash_profile
+3.1.2.2 ~/.bash_login
+3.1.2.3 ~/.profile
+3.1.2.4 ~/.bashrc
+3.1.2.5 ~/.bashrc_logout
 3.1.3 Cambiando archivos de configuracion del shell
 3.2 Variables
 3.2.1 Tipos de variables
+3.2.1.1 Variables globales
+3.2.1.2 Variables locales
+3.2.1.3 Variables por el contenido
 3.2.2 Creando variables
 3.2.3 Exportando variables
 3.2.4 Reservando variables
+3.2.4.1 Variables reservadas del shell Bourne
+3.2.4.2 Variables reservadas de Bash
 3.2.5 Parametros especiales
 3.2.6 Reciclado de scripts con variables
-3.3 Entrecommilando caracteres
+3.3 Entrecomillando caracteres
 3.3.1 ¿Por que?
 3.3.2 Caracteres de escape
 3.3.3 Comillas simples
@@ -124,6 +144,9 @@ Expreciones regulares
 4.2 Ejemplos usando grep
 4.2.1 ¿Que es grep?
 4.2.2 Grep y las expresiones regulares
+4.2.2.1 Palabras y lineas anclas
+4.2.2.2 Clases de caracteres
+4.2.2.3 Comodines
 4.3 Busqueda de patrones usando las caracteristicas de Bash
 4.3.1 Rangos de caracteres
 4.3.2 Clases de caracteres
@@ -135,7 +158,7 @@ El editor de flujo GNU sed
 
 5.1 Introduccion
 5.1.1 ¿Que es sed?
-5.1.2 comandos sed
+5.1.2 Comandos sed
 5.2 Editor interactivo
 5.2.1 Imprimiendo lineas que contienen un patron
 5.2.2 Eliminando lineas de la entrada que contienen un patron
@@ -162,6 +185,8 @@ El lenguaje de programacion GNU awk
 6.3 Variables gawk
 6.3.1 El separador del campo de entrada
 6.3.2 Los separadores de salida
+6.3.2.1 La salida del separador de campo 
+6.3.2.2 La salida del separador de registro
 6.3.3 El numero de registros
 6.3.4 Variables definidas por el usuario
 6.3.5 Mas ejemplos
@@ -174,10 +199,23 @@ Declaraciones condicionales
 
 7.1 Introduccion a "if"
 7.1.1 General
+7.1.1.1 Expresiones usadas con "if"
+7.1.1.2 Comandos seguidos de a declaracion "then"
+7.1.1.3 Checando archivos
+7.1.1.4 Checando opciones del shell
 7.1.2 Declaraciones simples de "if"
+7.1.2.1 Provando el estado de la salida
+7.1.2.2 Comparaciones numericas
+7.1.2.3 Comparaciones de cadenas de caracteres "string"
 7.2 Uso avanzado de "if"
 7.2.1 Construcciones if/then/else
+7.2.1.1 Ejemplos tontos
+7.2.1.2 Comprovando argumentos de la linea de comandos
+7.2.1.3 Probando el numero de argumentos
+7.2.1.4 Provando que un archivo exista
 7.2.2 Construcciones if/then/elif/else
+7.2.2.1 General
+7.2.2.2 Ejemplo
 7.2.3 Declaraciones "if" anidados
 7.2.4 Operaciones booleanas
 7.2.5 Uso de las declaraciones "exit" y "if"
@@ -197,7 +235,15 @@ Escribiendo scripts interactivos
 8.2.1 Usando el comando embebido "read"
 8.2.2 Esperando por la entrada del usuario
 8.2.3 Redireccion y descriptores de archivo
+8.2.3.1 General
+8.2.3.2 Redireccion de errores
 8.2.4 Archivos de entrada y de salida
+8.2.4.1 Usando /dev/fd
+8.2.4.2 Leyendo y ejecutando
+8.2.4.2.1 Asignando descriptores de archivo a archivos
+8.2.4.2.2 Leyendo en scripts
+8.2.4.3 Cerrando descriptores de archivos
+8.2.4.4 Documentos "Here"
 8.3 Sumario
 8.4 Ejercicios
 
