@@ -253,9 +253,17 @@ Tareas repetitivas
 9.1 El ciclo "for"
 9.1.1 ¿Como es que trabaja?
 9.1.2 Ejemplos
+9.1.2.1 
+9.1.2.2
+
 9.2 El ciclo "while"
 9.2.1 ¿Que es?
 9.2.2 Ejemplos
+9.2.2.1
+9.2.2.2
+9.2.2.3
+9.2.2.4
+
 9.3 El ciclo "until"
 9.3.1 ¿Que es?
 9.3.2 Ejemplos
@@ -268,6 +276,10 @@ Tareas repetitivas
 9.5.3 Ejemplos
 9.6 Haciendo menus con el comando embebido "select"
 9.6.1 General
+9.6.1.1
+9.6.1.2
+
+
 9.6.2 Submenus
 9.7 El comando embebido "shift"
 9.7.1 ¿Que es lo que hace?
@@ -291,6 +303,10 @@ Mas de variables
 10.3.1 Aritmetica en variables
 10.3.2 Longitud de una variable
 10.3.3 Transformacion de variables
+10.3.3.1
+10.3.3.2
+10.3.3.3
+
 10.4 Sumario
 10.5 Ejercicios
 
@@ -314,11 +330,19 @@ Capturando señales
 
 12.1 Señales
 12.1.1 Introduccion
+12.1.1.1 Encontrando la pagina del manual de "signal"
+12.1.1.2 Señales hacia tu Bash shell
+12.1.1.3 Enviando señales usando el shell
+
+
 12.1.2 Uso de señales con "kill"
 12.2 Trampas
 12.2.1 General
 12.2.2 Como hacer trampas en bash
 12.2.3 Mas ejemplos
+12.2.3.1 Detectando cuando una variable es usada
+12.2.3.2
+
 12.3 Sumario
 12.4 Ejercicios
 
