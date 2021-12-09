@@ -259,10 +259,10 @@ Tareas repetitivas
 9.2 El ciclo "while"
 9.2.1 ¿Que es?
 9.2.2 Ejemplos
-9.2.2.1
-9.2.2.2
-9.2.2.3
-9.2.2.4
+9.2.2.1 Ejemplo simple usando "while"
+9.2.2.2 cilos "while" sucios
+9.2.2.3 Usando la entrada del teclado para controlar el ciclo "while"
+9.2.2.4 Calcular un promedio
 
 9.3 El ciclo "until"
 9.3.1 ¿Que es?
@@ -276,8 +276,8 @@ Tareas repetitivas
 9.5.3 Ejemplos
 9.6 Haciendo menus con el comando embebido "select"
 9.6.1 General
-9.6.1.1
-9.6.1.2
+9.6.1.1 Uso de "select"
+9.6.1.2 Ejemplos
 
 
 9.6.2 Submenus
@@ -303,9 +303,9 @@ Mas de variables
 10.3.1 Aritmetica en variables
 10.3.2 Longitud de una variable
 10.3.3 Transformacion de variables
-10.3.3.1
-10.3.3.2
-10.3.3.3
+10.3.3.1 Substitucion
+10.3.3.2 Removiendo "substrings"
+10.3.3.3 Reemplazando parte delos nombres de variables
 
 10.4 Sumario
 10.5 Ejercicios
@@ -698,9 +698,11 @@ Tareas repetitivas
 9.1 El ciclo "for"
 9.1.1 ¿Como es que trabaja?
 9.1.2 Ejemplos
+
 9.2 El ciclo "while"
 9.2.1 ¿Que es?
 9.2.2 Ejemplos
+
 9.3 El ciclo "until"
 9.3.1 ¿Que es?
 9.3.2 Ejemplos
