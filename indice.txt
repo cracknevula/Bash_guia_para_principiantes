@@ -341,7 +341,7 @@ Capturando señales
 12.2.2 Como hacer trampas en bash
 12.2.3 Mas ejemplos
 12.2.3.1 Detectando cuando una variable es usada
-12.2.3.2
+12.2.3.2 Removiendo la basura al salir.
 
 12.3 Sumario
 12.4 Ejercicios
