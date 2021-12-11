@@ -468,7 +468,11 @@ Como otros proyectos de GNU, la iniciativa Bash fue iniciadapara preservar, prot
 
 1.2.2 Caracteristicas que solo encontraras en bash
 1.2.2.1 Invocacion
+En adicion a las opciones de linea de comandos de un solo caracter los cuales generalmente pueden ser usando el comando shell embebido, hay varias opciones multicaracterque puedes usar. Nosotros solo nos encontraremoscon un par de las opciones mas comunes en este y el los siguientes capitulos; La lista completa puede ser encontrada en las paguinas del manual de bash, Caracteristicas de bash > Invocar Bash
+
 1.2.2.2 Archivos de inicio de Bash
+
+
 1.2.2.2.1 Invocar un shell de logeo interactivo
 1.2.2.2.2 Invocar como un shell interactivo sin logeo
 1.2.2.2.3 Invocado de forma no interactiva
