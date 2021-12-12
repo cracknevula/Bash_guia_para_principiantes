@@ -468,18 +468,26 @@ Como otros proyectos de GNU, la iniciativa Bash fue iniciadapara preservar, prot
 
 1.2.2 Caracteristicas que solo encontraras en bash
 1.2.2.1 Invocacion
-En adicion a las opciones de linea de comandos de un solo caracter los cuales generalmente pueden ser usando el comando shell embebido, hay varias opciones multicaracter que puedes usar. Nosotros solo nos encontraremoscon un par de las opciones mas comunes en este y el los siguientes capitulos; La lista completa puede ser encontrada en las paguinas del manual de bash, Caracteristicas de bash > Invocar Bash
+En adicion a las opciones de linea de comandos de un solo caracter los cuales generalmente pueden ser usando el comando shell embebido, hay varias opciones multicaracter que puedes usar. En este y el los siguientes capitulos nosotros solo nos encontraremos con un par de las opciones mas comunes; La lista completa puede ser encontrada en las paginas del manual de bash, Caracteristicas de bash > Invocar Bash
 
 1.2.2.2 Archivos de inicio de Bash
-
+Los archivos de inicializacion que son leidos y ejecutados al iniciar Bash. Las siguientes subsecciones describen diferentes maneras de iniciar el shell, y los archivos de inicializacion que son leidos consecuentemente.
 
 1.2.2.2.1 Invocar un shell de logeo interactivo
+
 1.2.2.2.2 Invocar como un shell interactivo sin logeo
+
 1.2.2.2.3 Invocado de forma no interactiva
+
 1.2.2.2.4 Invocar con el comando sh
+
 1.2.2.2.5 Modo POSIX
+
 1.2.2.2.6 Invocado remotamente
+
 1.2.2.2.7 Invocar cuando UID es diferente de EUID
+
+
 1.2.2.3 Shells interactivos
 1.2.2.3.1 ¿Que es un shell interactivo?
 1.2.2.3.2 ¿Es esto un shell interactivo?
