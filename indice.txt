@@ -474,6 +474,15 @@ En adicion a las opciones de linea de comandos de un solo caracter los cuales ge
 Los archivos de inicializacion que son leidos y ejecutados al iniciar Bash. Las siguientes subsecciones describen diferentes maneras de iniciar el shell, y los archivos de inicializacion que son leidos consecuentemente.
 
 1.2.2.2.1 Invocar un shell de logeo interactivo
+Interactivo significa que puedes meter comandos. El shell no esta corriendo porque un script a sido activado. Un shell de logeo significa que puedes usar el shell despues de autentificarte en el sistema, usualmente ingresando el usuario y la contraseña.
+
+Archivos leidos:
+
+	* /etc/profile
+	* ~/.bash_profile, ~/.bash_login, o .~/.profile: el primer archivo capaz de ser leido es el primero en eleerse y se ignoran los demas
+	* ~/.bash_logout despues de salir.
+
+Los mansajes de error son mostrados si los archivos de configuracion existen pero no son legibles. Si un archivo no existe Bash busca el siguiente.
 
 1.2.2.2.2 Invocar como un shell interactivo sin logeo
 
