@@ -485,20 +485,61 @@ Archivos leidos:
 Los mansajes de error son mostrados si los archivos de configuracion existen pero no son legibles. Si un archivo no existe Bash busca el siguiente.
 
 1.2.2.2.2 Invocar como un shell interactivo sin logeo
+Un shell no logeado significa que tu no tienes que autentificarte en el sistema. Por ejemplo, cuando abres un terminal usando un entorno de escritorio, usando un icono, o un elemento del menu, ese es un shell no logeado.
+
+Archivos leidos:
+	* ~/.bashrc
+
+Este archivo por lo general es referido dentro de ~/.bash_profile:
+
+if [ -f ~/.bashrc ]; then . ~/bashrc; fi
+
+vee el capitulo 7 para mas informacion del constructo "if"
 
 1.2.2.2.3 Invocado de forma no interactiva
+Todos los scripts usan shell´s no interactivas. Ellos son programados para hacer determinadas tareas y no pueden ser hacer otras tareas excepto aquellas para las que fueron programados.
+
+Archivos leidos:
+	Definidos por "BASH_ENV"
+
+La variable "PATH" no es usada para buscar este archivo, si es que lo quieres usar mejor refierete a el escribiendo el camino completo hacia el archivo.
 
 1.2.2.2.4 Invocar con el comando sh
+Bash trata de comportarse como el programa shell historico "Bourne sh" mientras cumple con el estandar POSIX.
+
+Archivos leidos:
+	/etc/profile
+	~/.profile
+
+Cuando es invocado interactivamente, la variable "ENV" puede apuntar a informacion adicional al iniciar.
 
 1.2.2.2.5 Modo POSIX
+Esta opcion esta habilitada en el comando embebido "set":
+
+set -o posix
+
+O llamando al programa bash con la opcion "--posix". Bash va a tratar de cumplir el estandar POSIX para shell´s tanto como sea posible. Ajustando la variable POSIXLY_CORRECT hace lo mismo.
+
+Archivos leidos:
+
+	* definido por la variable "env"
 
 1.2.2.2.6 Invocado remotamente
+Arvchivos leidos cuando invocamos mediante rshd: //supongo fue antes de que el prtocolo ssh fuera extensamente usado
+
+	* ~/.bashrc
+
+Evita el uso de "r-tools"
+Se cuidadoso de los peligros de usar erramientas tales como "rlogin", "telnet", "rsh" y "rcp". Todos ellos son intrinsicamente inseguros porque los datos confidenciales son son enviados a travez de la red de forma desencriptada. Si necesitas herraminetas para la ejecucion remota, transferencia remota y parecidos, usa una implementacion de una shell segura como "Secure shell", generalmente conocido como ssh, disponible de forma libre en "http://www.openssh.org". Diferentes programas cliente estan disponibles para sistemas que NO sean tipo unix, observa tu repositorio de software local.
+
 
 1.2.2.2.7 Invocar cuando UID es diferente de EUID
-
+No hay archivos de inicio que leer en este caso.
 
 1.2.2.3 Shells interactivos
 1.2.2.3.1 ¿Que es un shell interactivo?
+
+
 1.2.2.3.2 ¿Es esto un shell interactivo?
 1.2.2.3.3 Comportaminto de un shell interactivo
 1.2.2.4 Condicionales
