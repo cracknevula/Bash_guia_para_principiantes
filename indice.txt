@@ -538,10 +538,28 @@ No hay archivos de inicio que leer en este caso.
 
 1.2.2.3 Shells interactivos
 1.2.2.3.1 ¿Que es un shell interactivo?
-
+Un shell interactivo genralmente lee desde y escribe hacia el terminal del usario: entrada y salida estan conectados al terminal. El comportamiento interactivo de Bash inicia cuando el comando bash es llamado incluso sin ninguna opcion en los argumentos, excepto cuando la opcion es una cadena de caracteres que leer o cuando el shell es invocado para leer desde la entrada estandar, el cual nos permite configurar por parametros posicionales.
 
 1.2.2.3.2 ¿Es esto un shell interactivo?
-1.2.2.3.3 Comportaminto de un shell interactivo
+Prueba viendo el contenido del caracter especial "-", el cual contiene una "i" cuando el shell es interactivo:
+
+eddy:~> echo $-
+himBH
+
+En un shell no interactivo, el prompt "PS1" no esta configurado.
+
+1.2.2.3.3 Comportaminto del shell interactivo
+Diferencias en el modo interactivo:
+
+		* Bash lee los archivos de inicio
+		* Control de trabajos habilitado por default
+		* Los prompts estan configurados, PS2 esta habilitado para comandos multilinea, usualmente esta configurado con un ">". Este Tambien es el prompt que optienes cuando el shell piensa que estas metiendo un comando incompleto, por ejemplo cuando olvidas cerrar comillas, estructuras de comandos que no pueden ser excluidas, etc.
+		* Los comandos son leidos por default desde la linea de comandos usando "redline".
+		* En los interpretes Bash la opcion "ignoreeof" en lugar de salir 
+		* Bash interpreta la opción de shell ignoreeof en lugar de salir inmediatamente después de recibir EOF
+(Fin del documento) 
+
+
 1.2.2.4 Condicionales
 1.2.2.5 Aritmetica en el shell
 1.2.2.6 Alias
