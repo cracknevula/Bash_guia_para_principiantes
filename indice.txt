@@ -567,9 +567,21 @@ Diferencias en el modo interactivo:
 		* Bash comprueba el correo periodicamente
 		* Bash puede ser configurado para salir cuando encuentra variables no referenciadas. En el modo interactivo este comportamiento esta deshabilitado
 		* Cuando los comandos embebidos encuentran errores de redireccion, no van a causar el cierre/salida del shell.
-		* Comandos embebidos 
+		* Los comandos especiales embebidos retornan errores cuando el modo POSIX es usado no causan la salida del shell. Los comandos embebidos son listados en la seccion 1.3.2.
+		* Una falla en el comando "exec" no causa la salida del shell.
+		* Parcear errores de sintaxis no causan la salida del shell.
+		* Una simple comprobacion de ortografia para los argumentos del comando "cd" esta habilitada por defaul.
+		* La salida automatica despues de pasar un cierto tiempo espeficado en en la variable "TMOUNT" esta habilitada.
+
+Mas informacion:
+
+		* Seccion 3.2
+		* Seccion 3.6
+		* Observa el capitulo 12 para mas informacion acerca de señales
+		* La seccion 3.4 discute las varias expanciones echas despues de introducir un comando.
 
 1.2.2.4 Condicionales
+
 1.2.2.5 Aritmetica en el shell
 1.2.2.6 Alias
 1.2.2.7 Arrays (cadenas)
