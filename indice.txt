@@ -558,7 +558,16 @@ Diferencias en el modo interactivo:
 		* En los interpretes Bash la opcion "ignoreeof" en lugar de salir 
 		* Bash interpreta la opción de shell ignoreeof en lugar de salir inmediatamente después de recibir EOF
 (Fin del documento) 
-
+		* El comando "history" y el autocompletado del historial estan habilitados por defecto. El historial es guardado en un archivo que apunta a HISTFILE cuando se sale del shell. Por defecto HISTFILE apunta a "~/.bash_history".
+		* La expancion de los alias estab habilitados por defecto
+		* En ausencia de trampas, la señal SIGTERM sera ignorada
+		* En ausencia de trampas, la señal SIGINT es capturada y manejada. Por lo tanto, tipear Ctrl+c, por ejemplo, no quitara al shell interactivo
+		* Al enviar señales SIGHUP a todos los trabajos al salir se configura con la opcion "huponexit".
+		* Los comandos se ejecutan al leer
+		* Bash comprueba el correo periodicamente
+		* Bash puede ser configurado para salir cuando encuentra variables no referenciadas. En el modo interactivo este comportamiento esta deshabilitado
+		* Cuando los comandos embebidos encuentran errores de redireccion, no van a causar el cierre/salida del shell.
+		* Comandos embebidos 
 
 1.2.2.4 Condicionales
 1.2.2.5 Aritmetica en el shell
