@@ -581,8 +581,28 @@ Mas informacion:
 		* La seccion 3.4 discute las varias expanciones echas despues de introducir un comando.
 
 1.2.2.4 Condicionales
+Las expresiones condicionales son usadas por comandos compuestos, corchetes, lo que se va a comprobar y cierre de corchetes, ademas de comandos embebidos. [ test ].
+
+Las exresiones pueden ser binarias o unarias, Las expresiones unarias son por lo regular usadas para examinar el estado de un archivo. Tu solo necesitas un objeto, por ejemplo un archivo, para hacer la openracion en el.
+
+>>> este es una explicacion de los descriptores de archivos bastante mucho vomitiva, esta del asco, creo que lo puedo mejorar un poco.
+
+Hay operadores de cadenas de caracteres y tambien operadores de comparacion numerica; esos son operadores binarios, requiriendo dos objetos para hacer las operaciones, Si el argumento "FILE" de uno de los primarios tiene la forma "/dev/fd/N". entonces el descriptor "N" es checado, Si el argumento "FILE" de uno de los primararios es uno de "/dev/stdin", "/dev/stdout" o "/dev/stderr", entonces sus descriptores de archivo seran 0, 1 o 2 respectivamente seran checados.
+
+<<<
+Existen comparadores de cadenas de caracteres asi como tambien comparadores de expresiones numericas; estos operadores son binarios, ya que necesitan dos objetos para manejarse. 
+
+En entornos tipo UNIX se maneja una filosofia donde todo es un archivo, asi las bocinas, el teclado, el raton, la pantalla y hasta la impresora son archivos, y es trabajo de el kernel crear las estructuras necesarias para que el shell, en este caso bash pueda trabajar con todos ellos, ya sea escribiendo o recibiendo entradas de estos archivos. Suena un poco extraño, pero tambien hay archivos conceptuales; para manejarlos el shell hace uso de los descriptores (descriptores de archivos) que apuntan a cada unos de estos archivos especiales, cuandoel shell inicializa crea 3:
+
+/dev/stdout: o la salida estandar, por lo regular esta relacionada con la pantalla.
+/dev/stdin: o la entrada estandar, que por lo regular esta asociada a la entrada.
+/dev/stderr: o la salida estandar de error, que tambien por lo regular esta asociada a la pantalla.
+
+Los condicionales son discutidos en detalle en el capitulo 7.
+Para mas informacion hacerca de los descriptores de archivo vea la seccion 8.2.3.
 
 1.2.2.5 Aritmetica en el shell
+El shell permite expresiones aritmeticas a ser evaluadas 
 1.2.2.6 Alias
 1.2.2.7 Arrays (cadenas)
 1.2.2.8 Pila del directorio
