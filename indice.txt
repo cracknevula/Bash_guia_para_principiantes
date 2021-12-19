@@ -602,8 +602,19 @@ Los condicionales son discutidos en detalle en el capitulo 7.
 Para mas informacion hacerca de los descriptores de archivo vea la seccion 8.2.3.
 
 1.2.2.5 Aritmetica en el shell
-El shell permite expresiones aritmeticas a ser evaluadas 
+El shell permite evaluar expresiones aritmeticas de enteros de ancho fijo sin control de desbordamiento, sin embargo la divicion entre cero es atrapada y marcada como error. Las operaciones y su precedencia y asociatividad son los mismos que el lenguaje C.
+
+Para mas informacion observa el capitulo 3
+
 1.2.2.6 Alias
+Un alias permite a un comando ser sustituido por una palabra que es usada ahora para referirse al primer comando. El shell mantiene una lista de alias que pueden ser configurados o desconfigurados con los comandos "alias" y "unalias".
+
+Bash siempre lee al menos una linea completa de entrada antes de ejecutar cualquier comando de esa liena. Los alias son expandidos cuando un comando es leido, no cuando es ejecutado. Por lo tanto, una definicion de alias aparece en la misma linea como otro cualquier otro comando no tomando efecto hasta que la siguiente linea de la entrada es leida. Los comandos que siguen despues de la definicion de un alias en esa misma linea no son afectados por el nuevo alias.
+
+Los alias son expandidos cuando la definicion de una funcion es leida, no cuando la funcion es ejecutada, porque una difinicion de funcion es en si misma un comando compuesto. Como consecuancia, definir alias en una funcion no estan disponibles hasta despues de que la funcion es ejecutada.
+
+Lo discutiremos a detalle en la seccion 3.5
+
 1.2.2.7 Arrays (cadenas)
 1.2.2.8 Pila del directorio
 1.2.2.9 El prompt
