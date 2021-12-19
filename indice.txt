@@ -616,7 +616,13 @@ Los alias son expandidos cuando la definicion de una funcion es leida, no cuando
 Lo discutiremos a detalle en la seccion 3.5
 
 1.2.2.7 Arrays (cadenas)
+Bash provee variables array unidimencionales. Cualquier variable puede ser usada como array: el comando embebido "declare" declarara explicitamente un array. No hay un limete maximo para el tamaño del array, o algun requerimiento donde los mienbros sean indexados o asignados contiguamente. Los arrays son base cero.
+
+Para ver mas vea el capitulo 10.
+
 1.2.2.8 Pila del directorio
+
+
 1.2.2.9 El prompt
 1.2.2.10 El shell restringido
 1.3 Ejecutando programas
